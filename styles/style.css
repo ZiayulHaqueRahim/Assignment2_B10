@@ -192,11 +192,154 @@ nav li a{
     max-width: 23rem;
     border-radius: 20px;
 }
+.team{
+    background-color: #111111;
+    max-width: 1440px;
+    padding: 20px;
+}
+.team-info{
+    text-align: center;
+}
+.team-title{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 800;
+    font-family: Inter;
+    color: white;
+}
+.team-subtitle{
+    font-size: 1.1rem ;
+    font-weight: 300;
+    font-family: Inter;
+    color: white;
+    opacity: 50%;
+}
+.member-title{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: Inter;
+    color: white;
+    
+}
+.member-subtitle{
+    font-size: 1.1rem ;
+    font-weight: 300;
+    font-family: Inter;
+    color: white;
+    opacity: 50%;
+}
+.team-members{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-rows: 300px 300px 300px 300px;
+    
+}
+.member img{
+     border-radius: 10px;
+     max-width: 100%;
+
+}
+.member{
+    background-repeat: no-repeat;
+}
+/* 
+#Trainer1{
+    background-image: url('../images/trainer1.png');
+}
+#Trainer2{
+    background-image: url('../images/trainer2.png');
+}
+#Trainer3{
+    background-image: url('../images/trainer3.png');
+}
+#Trainer4{
+    background-image: url('../images/trainer4.png');
+}
+#Trainer5{
+    background-image: url('../images/trainer5.png');
+}
+#Trainer6{
+    background-image: url('../images/trainer6.png');
+}
+.member */
+
+
+
+
+
+.contact-part{
+    background-color: #222222;
+    max-width: 1440px;
+    margin: 0px auto;
+}
+.contact-logo{
+    font-size: 3rem;
+    font-family: Inter;
+    font-weight: 500;
+    color:#E6533C;
+
+}
+.contact-subtitle{
+    font-size: .8rem;
+    font-family: Inter;
+    font-weight: 300;
+    color:white;
+    opacity: .5;
+    max-width: 300px;
+
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-items: center;
+    
+}
+.contact-title{
+    font-size: 2rem;
+    font-family: Inter;
+    font-weight: 500;
+    color:white;
+}.contact-subtitle{
+    font-size: .8rem;
+    font-family: Inter;
+    font-weight: 300;
+    color:white;
+    opacity: .5;
+    max-width: 300px;
+
+}
+.skill-title{
+    font-size: 2rem;
+    font-family: Inter;
+    font-weight: 500;
+    color:white;
+}.skill-subtitle{
+    font-size: .8rem;
+    font-family: Inter;
+    font-weight: 300;
+    color:white;
+    opacity: .5;
+    max-width: 300px;
+
+}
+
+.copy{
+    color: white;
+    text-align: center;
+    opacity: .5;
+    font-size: .7rem;
+    font-weight: 200;
+}
+
+
 @media screen and (max-width: 576px) {
     .nav-icon{
         display: none;
     }
-    .hero-info, .progress{
+    .hero-info, .progress, .run{
         max-width: 570px;
         margin: 0px auto;
     }
@@ -257,10 +400,20 @@ nav li a{
     .run-content{
         align-items: center;
     }
-    .run-content > button{
-        align-items: center;
-        text-align: center;
-        justify-content: center;
+    .contact{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: left;
+        text-align: left;
+        align-items: flex-start;
+        padding: 20px;
     }
-    
+    .copy{
+        text-align: left;
+        padding: 20px;
+    }
+    .team-members{
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+    }
 }
