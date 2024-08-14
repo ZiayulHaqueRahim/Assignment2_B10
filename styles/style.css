@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.inter{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'custom-font';
+    src: local("Miama.ttf");
+}
+
+nav, .hero-section{
+    padding: 20px;
+}
+.banner{
+    max-width: 1440px;
+    max-width: 0px auto;
+    background: #111111;
+}
+.hide{
+    color:white;
+    display: none;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    border: .1px solid gray;
+    border-radius: 40px;
+}
+nav ul li{
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+    color:white;
+    font-size: 1rem;
+    font-family: Inter;
+    padding: 10px 25px;
+    font-weight: 400;
+}
+.logo{
+    font-size: 2rem ;
+    font-family: ;
+    font-weight: 800;
+    color:#E6533C;
+}
+.btn{
+    background-color: #E6533C;
+    border-radius: 2.5rem ;
+    text-align: center;
+    padding: 10px 25px;
+    border: none;
+    color:white;
+    font-family: Inter;
+}
+.hero-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.hero-title{
+    max-width: 520px;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 4.2rem;
+    font-weight: 900;
+    text-align: left;
+    font-family: Inter;
+
+}
+.hero-subtitle{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: Inter;
+    max-width: 520px;
+    font-family: Inter;
+}
+.shape{
+    font-family: custom-font;
+    font-size: 4.2rem;
+    font-weight: 400;
+    text-align: left;
+    color:white;
+    max-width: 52px;
+}
+.btn1{
+    color:white;
+    font-size: 1rem;
+    font-family: Inter;
+    font-weight: 400;
+    max-width: 520px;
+    background-color: #E6533C;
+    border-radius: 40px;
+    padding: 15px 40px;
+    border: none;
+    font-family: Inter;
+}
+.btn2{
+    background-color: #111111;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 520px;
+    border-radius: 40px;
+    padding: 15px 40px;
+    font-family: Inter;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    .nav-icon{
+        display: none;
+    }
+    .hero-info{
+        max-width: 350px;
+        margin: 0px auto;
+    }
+    .hero-section{
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 20px;
+    }
+    .hero-btn{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .hero-title{
+        max-width: 350px;
+        font-size: 2rem;
+        font-weight: 900;
+        text-align: left;
+    }
+    .hero-subtitle{
+        font-weight: 400;
+        font-size: 1rem;
+        max-width: 350px;
+    }
+    .shape{
+        font-family: custom-font;
+        font-size: 2rem;
+        font-weight: 400;
+        text-align: left;
+    }
+    .hide{
+        display: block;
+    }
+}
