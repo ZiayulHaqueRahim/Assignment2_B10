@@ -120,18 +120,84 @@ nav li a{
     font-family: Inter;
     border: 1px solid white;
 }
+.progress{
+    background-color:black;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.progress-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+.progress-info{
+    max-width: 670px;
+    margin: 0px auto;
+}
+.progress-title{
+    font-size: 4rem;
+    color:white;
+    font-weight: 800;
+    font-family: Inter;
 
+}
+.progress-subtitle{
+    font-size: 1.4rem ;
+    font-weight: 300;
+    font-family: Inter;
+    color: white;
+    opacity: 50%;
+}
 
+.progress-icon img, .progress-icon img, .progress-icon img, .progress-icon img{
+    border-radius: 100px;
+    max-width: 180px;
+    min-height: 180px;
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    
+}
+.icon-title{
+    font-size: 1.2rem;
+    color:white;
+    font-weight: 400;
+    font-family: Inter;
+}
+.icon-subtitle{
+    font-size: .7rem ;
+    font-weight: 300;
+    font-family: Inter;
+    color: white;
+    opacity: 50%;
+}
+.progress-icon{
+    max-width: 250px;
+    margin-top: 50px;
+}
 
-
-
-
+.run{
+    background-color: #222222;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    padding: 10px 20px;
+}
+.run-img img{
+    max-width: 23rem;
+    border-radius: 20px;
+}
 @media screen and (max-width: 576px) {
     .nav-icon{
         display: none;
     }
-    .hero-info{
-        max-width: 350px;
+    .hero-info, .progress{
+        max-width: 570px;
         margin: 0px auto;
     }
     .hero-section{
@@ -144,7 +210,7 @@ nav li a{
         flex-direction: row;
         gap: 20px;
     }
-    .hero-title{
+    .hero-title, .progress-info{
         max-width: 350px;
         font-size: 2rem;
         font-weight: 900;
@@ -164,4 +230,37 @@ nav li a{
     .hide{
         display: block;
     }
+    .progress-img{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .progress-title{
+        max-width: 350px;
+        font-size: 2rem;
+        font-weight: 900;
+        text-align: center;
+    }
+    .progress-subtitle{
+        font-weight: 400;
+        font-size: 1rem;
+        max-width: 350px;
+    }
+    .run{
+        flex-direction: column;
+        gap: 20px;
+        text-align: left;
+
+    }
+    .run-content{
+        align-items: center;
+    }
+    .run-content > button{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
 }
