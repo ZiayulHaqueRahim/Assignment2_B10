@@ -36,6 +36,7 @@ nav{
     gap: 10px;
     border: .1px solid gray;
     border-radius: 40px;
+    padding-left:  0px;
 }
 nav ul li{
     list-style: none;
@@ -50,7 +51,7 @@ nav li a{
 }
 .logo{
     font-size: 2rem ;
-    font-family: ;
+    font-family: Inter;
     font-weight: 800;
     color:#E6533C;
 }
@@ -58,7 +59,7 @@ nav li a{
     background-color: #E6533C;
     border-radius: 2.5rem ;
     text-align: center;
-    padding: 10px 25px;
+    padding:;
     border: none;
     color:white;
     font-family: Inter;
@@ -84,7 +85,6 @@ nav li a{
     font-size: 1rem;
     font-family: Inter;
     max-width: 520px;
-    font-family: Inter;
 }
 .shape{
     font-family: "Miama", sans-serif;
@@ -189,95 +189,113 @@ nav li a{
     max-width: 23rem;
     border-radius: 20px;
 }
-.team{
+
+
+.test-chart{
     background-color: #111111;
     max-width: 1440px;
-    padding: 20px;
-}
-.team-info{
     text-align: center;
+    padding: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 100px;
 }
-.team-title{
-    color: white;
-    font-size: 3.5rem;
-    font-weight: 800;
-    font-family: Inter;
-    color: white;
-}
-.team-subtitle{
-    font-size: 1.1rem ;
-    font-weight: 300;
-    font-family: Inter;
-    color: white;
-    opacity: 50%;
-}
-.member-title{
-    color: white;
-    font-size: 2rem;
-    font-weight: 600;
-    font-family: Inter;
-    color: white;
-    
-}
-.member-subtitle{
-    font-size: 1.1rem ;
-    font-weight: 300;
-    font-family: Inter;
-    color: white;
-    opacity: 50%;
-}
-.team-members{
-    display: grid;
-    position: relative;
-    grid-template-columns: repeat(4, 1fr) ;
-    grid-template-rows: 300px 300px 300px 300px;
-    
-}
-.member img{
-     border-radius: 10px;
-     max-width: 100%;
-
-}
-.member{
-    background-repeat: no-repeat;
-    position: absolute;
-}
-/* 
-#Trainer1{
-    background-image: url('../images/trainer1.png');
-}
-#Trainer2{
-    background-image: url('../images/trainer2.png');
-}
-#Trainer3{
-    background-image: url('../images/trainer3.png');
-}
-#Trainer4{
-    background-image: url('../images/trainer4.png');
-}
-#Trainer5{
-    background-image: url('../images/trainer5.png');
-}
-#Trainer6{
-    background-image: url('../images/trainer6.png');
-}
-.member */
 .test{
-    background-color: #111111;
+    max-width: 1440px;
+    background-color: #222222;
+    padding: 10px 20px 100px 20px;
 }
 .chart{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 20px;
+
 }
 
 table{
     border-collapse: collapse;
+    
 }
 td,th{
-    border: 1px solid white;
+    border: white;
     padding:5px 10px;
+    color:#777777;
+    border: 1px solid #777777;
+}
+.form-container{
+    max-width: 50%;
+    
+}
+.bmi-title{
+    font-size: 1.4rem;
+    font-family: Inter;
+    font-weight: 500;
     color:white;
 }
 
+.submit{
+    background-color: #E6533C;
+    max-width: 100px;
+    max-height: 30px;
+    padding: 10px;
+    justify-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+input{
+    width: 50%;
+    height: 40px;
+    background-color: #333333;
+    color:#222222;
+    border: none;
+    border-radius: 10px;
+}
+ .form-mix > select{
+    width: 50%;
+    height: 40px;
+    background-color: #333333;
+    border-radius: 10px;
+    color:#777777;
+    border: none;
+}
+.form-footer > select{
+    height: 40px;
+    background-color: #333333;
+    border-radius: 10px;
+    color:#777777;
+    border: none;
+}
+.form-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-header{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+.form-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.form-mix{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 .contact-part{
     background-color: #222222;
     max-width: 1440px;
@@ -290,6 +308,7 @@ td,th{
     color:#E6533C;
 
 }
+
 .contact-subtitle{
     font-size: .8rem;
     font-family: Inter;
@@ -410,8 +429,16 @@ td,th{
     .run-content{
         align-items: center;
     }
+    .chart{
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+        max-width: 540px;
+        
+    }
     .contact{
         flex-direction: column;
+        max-width: 100%;
         gap: 20px;
         justify-content: left;
         text-align: left;
@@ -422,8 +449,5 @@ td,th{
         text-align: left;
         padding: 20px;
     }
-    .team-members{
-        grid-template-columns: repeat(1,1fr);
-        gap: 10px;
-    }
+
 }

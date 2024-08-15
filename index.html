@@ -81,61 +81,15 @@
             <img src="images/run.jpg">
         </div>
     </section>
-
-    <section class="team">
-        <div class="team-info">
-            <h3 class="team-title"> Meet Our Teams</h3>
-            <div class="team-subtitle">We have experienced,skilled and national
-                 award winning athletes for your service</p>
-        </div>
-        <div class="team-members">
-            <div id="Trainer1" class="member">
-                <img src="images/trainer1.png">
-                <h4 class="member-title">Jerome Bell</h4>
-                <p class="member-subtitle">Trainer</p>
-            </div>
-            <div id="Trainer2" class="member">
-                <img src="images/trainer2.png">
-                <h4 class="member-title">Gameron Willi</h4>
-                <p class="member-subtitle">Trainer</p>
-            </div>
-            <div  id="Trainer3" class="member">
-                <img src="images/trainer3.png">
-                <h4 class="member-title">Darrel Steward</h4>
-                <p class="member-subtitle">Trainer</p>
-            </div>
-            <div id="Trainer4" class="member">
-                <img src="images/trainer4.png">
-                <h4 class="member-title">Dianee Russel</h4>
-                <p class="member-subtitle">Trainer</p>
-            </div>
-            <div  id="Trainer5" class="member">
-                <img src="images/trainer5.png">
-                <h4 class="member-title">Cody Fisher</h4>
-                <p class="member-subtitle">Trainer</p>
-            </div>
-            <div id="Trainer6" class="member">
-                <img src="images/trainer6.png">
-                <h4 class="member-title">Theresa Web</h4>
-                <p class="member-subtitle">Trainer</p>
-            </div>
-            <div id="Trainer6" class="member">
-                <img src="images/trainer6.png">
-                <h4 class="member-title">Theresa Web</h4>
-                <p class="member-subtitle">Trainer</p>
-            </div>
-            <div id="Trainer6" class="member">
-                <img src="images/trainer6.png">
-                <h4 class="member-title">Theresa Web</h4>
-                <p class="member-subtitle">Trainer</p>
-            </div>
-        </div>
+    <section class="test-chart">
+        <h2 class="progress-title">BMI Calculator</h2>
+        <p class="progress-subtitle">In order to monitor health status. It is essential to calculate your BMI</p>
     </section>
     <section class="test">
         <div class="chart">
             <div class="bmi">
+                <h3 class="bmi-title">BMI  Calculator Chart</h3>
                 <table>
-                    <caption>BMI Chart</caption>
                     <thead>
                         <th>BMI</th>
                         <th>Weight status</th>
@@ -161,27 +115,39 @@
                     
                 </table>
             </div>
-            <div>
-                <h3>Calculate Your BMI</h3>
-                <p>Calcaulating BMI is important because it monitor health status</p>
-                <div>
-                    <label for="name">Height/cm:
-                        <input id="name" type="text" placeholder="Height">
-                    </label>
-                    <label for="name">Height/cm:
-                        <input id="name" type="text" placeholder="Height">
-                    </label>
-                    <label for="name">Height/cm:
-                        <input id="name" type="text" placeholder="Height">
-                    </label>
-                    <label for="name">Height/cm:
-                        <input id="name" type="text" placeholder="Height">
-                    </label>
 
+            <div class="form-container">
+                <h3 class="bmi-title">Calculate Your BMI</h3>
+                <p class="skill-subtitle">Calcaulating BMI is important because it monitor health status</p>
+                <div class="form-content">
+                    <div class="form-header">
+                        <input class="height" type="text" placeholder="Height/cm">
+                        <input class="weight" type="text" placeholder="Weight/kg">
+                    </div>
+                    <div class="form-mix">
+                        <input class="age" type="text" placeholder="Age">
+                        <select class="sex">
+                            <option value="" disabled selected>Sex</option>
+                            <option value="male" >Male</option>
+                            <option value="">female</option>
+                        </select>
+                    </div>
+                    <div class="form-footer">
+                        <select class="activity">
+                            <option value="" disabled selected>Select an activity Factor</option>
+                            <option value="sedentary" >Sedentary</option>
+                            <option value="Light_activity" >Lightly active</option>
+                            <option value="moderatory_activity" >Moderately active</option>
+                            <option value="very_active" >Very active</option>
+                            <option value="extra_active" >Super active</option>
+                        </select>
+                        <input class="submit" type="submit" value="calculate">
+        
+                    </div>
+                    
                 </div>
+                
             </div>
-
-            
         </div>
     </section>
     <section class="contact-part">
