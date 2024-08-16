@@ -190,6 +190,20 @@ nav li a{
     border-radius: 20px;
 }
 
+.offer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #111111;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0px auto;
+    padding:  100px 20px;
+    
+}
+
 
 .test-chart{
     background-color: #111111;
@@ -296,6 +310,86 @@ input{
     flex-direction: row;
     gap: 10px;
 }
+
+.team-container{
+    display: grid;
+    position: relative;
+    grid-template-columns: 400px 400px 400px ;
+    grid-template-rows: repeat(3, 400px);
+    gap: 10px;
+    justify-content: space-around;
+}
+.team{
+    max-width: 1440px;
+    margin: 0px auto;
+    background-color: #111111;
+}
+.member{
+    position: relative;
+    border-radius: 20px;
+}
+#member1{
+    background-image: url('../images/trainer1.png');
+    height: 400px;
+    width: 400px;
+    background-repeat: no-repeat;
+}
+#member2{
+    background-image: url('../images/trainer2.png');
+    background-repeat: no-repeat;
+}
+#member3{
+    background-image: url('../images/trainer2.png');
+    background-repeat: no-repeat;
+    height:fit-content;
+    width: fit-content;
+}
+#member4{
+    background-image: url('../images/trainer2.png');
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+}
+#member5{
+    background-image: url('../images/trainer1.png');
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+}
+#member6{
+    background-image: url('../images/trainer2.png');
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+}
+
+ .member > img{
+    width: 100%;
+    height: 100%;
+    
+}
+.info{
+    position: left bottom;
+}
+.member-title .member-subtitle{
+    position: absolute;
+    position: left bottom;
+}
+.member-title{
+    font-size: 2rem;
+    font-family: Inter;
+    font-weight: 500;
+    color:white;
+}
+.member-subtitle{
+    font-size: .7rem;
+    font-family: Inter;
+    font-weight: 300;
+    color:white;
+    opacity: .5;
+    max-width: 300px;
+}
+
 .contact-part{
     background-color: #222222;
     max-width: 1440px;
@@ -448,6 +542,11 @@ input{
     .copy{
         text-align: left;
         padding: 20px;
+    }
+    .team-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
 }
